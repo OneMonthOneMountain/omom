@@ -7,6 +7,8 @@ import NotFound from './containers/NotFound'
 export default () =>
     <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/walks" exact component={Walks} />
+        <Route path="/upcoming" exact render={() => <Walks status="upcoming" />} />
+        <Route path="/suggested" exact render={() => <Walks status="suggested" />} />
+        <Route path="/completed" exact render={() => <Walks status="completed" />} />
         <Route component={NotFound} />
     </Switch>

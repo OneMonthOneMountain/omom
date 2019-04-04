@@ -16,8 +16,14 @@ class App extends Component {
           <Navbar.Toggle />
           <Navbar.Collapse>
             <Nav>
-              <LinkContainer to="/walks">
-                <Nav.Link>Walks</Nav.Link>
+              <LinkContainer to="/upcoming">
+                <Nav.Link>Upcoming</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/completed">
+                <Nav.Link>Completed</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/suggested">
+                <Nav.Link>Suggested</Nav.Link>
               </LinkContainer>
             </Nav>
           </Navbar.Collapse>
