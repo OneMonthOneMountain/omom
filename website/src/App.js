@@ -9,12 +9,12 @@ class App extends Component {
   render() {
     return (
       <div className="App container">
-        <Navbar collapseOnSelect>
+        <Navbar collapseOnSelect expand={"lg"}>
           <Navbar.Brand>
             <Link to="/">OMOM</Link>
           </Navbar.Brand>
           <Navbar.Toggle />
-          <Navbar.Collapse>
+          <Navbar.Collapse id="basic-navbar-nav">
             <Nav>
               <LinkContainer to="/upcoming">
                 <Nav.Link>Upcoming</Nav.Link>
