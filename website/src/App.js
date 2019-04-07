@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
-import { Navbar, Nav } from 'react-bootstrap'
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
+import Image from 'react-bootstrap/Image'
+import Container from 'react-bootstrap/Container'
 import { LinkContainer } from 'react-router-bootstrap'
 import Routes from './Routes'
 import './App.css';
@@ -8,11 +10,12 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="App container">
-        <Navbar collapseOnSelect expand={"lg"}>
-          <Navbar.Brand>
-            <Link to="/">OMOM</Link>
-          </Navbar.Brand>
+      <div className="App">
+        <Navbar collapseOnSelect variant={"dark"} expand={"md"} bg={"dark"}>
+          <LinkContainer to="/">
+            <Image roundedCircle className={"Icon"} src={"omom.png"}/>
+          </LinkContainer>
+          
           <Navbar.Toggle />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav>
@@ -28,7 +31,9 @@ class App extends Component {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        <Routes />
+        <Container>
+          <Routes />
+        </Container>
       </div>
     );
   }

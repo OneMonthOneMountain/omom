@@ -1,5 +1,6 @@
 .Walks {
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .Walk {
@@ -13,4 +14,31 @@
 
 .Walks p {
     color: #999;
+}
+
+.WalkImage {
+    max-height: 25em
+}
+
+.Info {
+    border-right: 1px solid rgba(0,0,0,.125);
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+}
+
+.InfoLeft {
+    border-right: 1px solid rgba(0,0,0,.125);
+    padding-right: 0.5em;
+}
+
+.InfoRight {
+    padding-left: 0.5em;
+}
+
+.InfoImage {
+    opacity: 0.5;
+}
+
+.WalkFooter {
+    padding: .75rem 0rem;
 }

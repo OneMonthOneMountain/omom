@@ -1,7 +1,14 @@
-.App {
-  margin-top: 15px;
-}
-
 .App .navbar-brand {
   font-weight: bold;
+}
+
+.Body {
+  background-color: red;
+}
+
+.Icon {
+  max-height: 5em;
+  margin-left: 2em;
+  margin-right: 2em;
+  cursor: pointer;
 }
