@@ -17,7 +17,7 @@ class App extends Component {
           </LinkContainer>
           
           <Navbar.Toggle />
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Collapse className="justify-content-end">
             <Nav>
               <LinkContainer to="/upcoming">
                 <Nav.Link>Upcoming</Nav.Link>
