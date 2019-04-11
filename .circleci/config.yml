@@ -12,14 +12,14 @@ jobs:
             - v1-dependencies-{{ checksum "website/package.json" }}
             - v1-dependencies-
 
-      - run: yarn install
+      - run: yarn --cwd=website install
 
       - save_cache:
           paths:
             - website/node_modules
           key: v1-dependencies-{{ checksum "website/package.json" }}
 
-      - run: yarn test
+      - run: yarn --cwd=website test
 
 workflows:
   version: 2
